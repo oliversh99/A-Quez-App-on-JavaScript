@@ -35,7 +35,7 @@ body.wrong {
     max-width: 80%;
     background-color: white;
     border-radius: 5px;
-    padding: 10px;
+    padding: 200px;
     box-shadow: 0 0 10px 2px;
 }
 /* style insaid grid */
@@ -91,4 +91,8 @@ outline: none;
 /* to hide every thing and keep Start Button showing up befor start game  */
 .hide {
     display: none;
+}
+
+.timersbtn{
+border: 1px solid green;
 }

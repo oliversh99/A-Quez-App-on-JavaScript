@@ -3,14 +3,35 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-
+ 
 let shuffledQuestions, currentQuestionIndex
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame ,startTimer)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
+// timer function
+function startTimer() {
+  var timer = document.getElementById("timer");
+  var secondsLeft = 90;
+var timerInterval;
+
+  timerInterval = setInterval(function () {
+    secondsLeft--;
+    timer.textContent = "Time: " + secondsLeft;
+
+    if (secondsLeft >= 0) {
+      span = document.getElementById("timer");
+      span.innerHTML = secondsLeft;
+    }
+    if (secondsLeft === 0) {
+      clearInterval(timerInterval);
+      showScore();
+    }
+  }, 1000);
+}
+  
 
 function startGame() {
   startButton.classList.add('hide')
@@ -18,6 +39,8 @@ function startGame() {
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
+  // call timer function
+  startTimer()
 }
 
 function setNextQuestion() {
@@ -107,8 +130,8 @@ const questions = [
     {
         question: 'What does HTML stand for?',
         answers: [
-          { text: 'Hypertext Medium Language', correct: true },
-          { text: 'Hypertext Markup Lingo', correct: false  },
+          { text: 'Hypertext Medium Language', correct: false },
+          { text: 'Hypertext Markup Lingo', correct: true  },
           { text: 'Hippo Tries Making Licorice', correct: false },
           { text: 'Hypertext Markup Language', correct: false }
         ]
@@ -123,12 +146,12 @@ const questions = [
         ]
       },
       {
-        question: 'How do you write "Hello World" in an alert box?',
+        question: 'Arrays in Javascript can be used to store?',
         answers: [
-          { text: 'alert("Hello world");', correct: true },
-          { text: 'alertBox("Hello world");', correct: false  },
-          { text: 'msgtBox("Hello world");', correct: false },
-          { text: 'msg("Hello world");', correct: false }
+          { text: 'booleans', correct: false },
+          { text: 'strings', correct: true  },
+          { text: 'umbers', correct: false },
+          { text: 'alerts', correct: false }
         ]
       },
     {
@@ -139,3 +162,4 @@ const questions = [
       ]
     }
   ]
+  
