@@ -10,26 +10,70 @@
 </head>
 <body >
     <div class="container">
-        <div   class="timersbtn"><span id="timer">90</span> seconds</div>
+        <section id="startpage" class="centered">
+            <h1 class="tittle">Quiz App</h1>
+        <h2 class="timersbtn"> Enjoy with this quiz and test your knowledge 
+            on HTML , CSS , and  Javascript by answer few question </h2>
+        <div class="timersbtn tim-btn">TIME: <span id="timer">90</span> seconds</div>
+        <!-- <div id="buttons">
+            <input id="startQuiz" type="button" value="Start 121Quiz" />
+          </div> -->
+        </section>
+
         <div id="question-container" class="hide">
         <div id="question">Question</div>
         <div id="answer-buttons" class="btn-grid" >
-            <button class="btn"> Answer1</button>
-            <button class="btn"> Answer2</button>
-            <button class="btn"> Answer3</button>
-            <button class="btn"> Answer4</button>   
+            <button class="btn" id="a" onclick="checkAnswer('a')"> Answer1</button>
+            <button class="btn" id="b" onclick="checkAnswer('b')"> Answer2</button>
+            <button class="btn" id="c" onclick="checkAnswer('c')"> Answer3</button>
+            <button class="btn" id="d" onclick="checkAnswer('d')"> Answer4</button>   
         </div>
         <!-- result div -->
         <div id="result"></div>
     </div>   
     
+    <div id="gameover" class="hidden">
+        <div id="finalScore"></div>
+        <input
+          type="text"
+          size="40"
+          placeholder="Enter you initials for high score"
+          name="intials"
+          id="initials"
+        />
+        <button id="submitScore" class="btnn">Submit Score</button>
+    </div>
+      <!--  -->
+    <div id="highscoreContainer" class="hidden">
+         <div id="high-scorePage">
+            <div id="leader-board">
+              <h2>Leader Board</h2>
+            </div>
+         </div>
+        <div id="endGameBtns">
+          <button id="playAgain" onclick="replayQuiz()" class="btnn">Play Again</button>
+          <button id="clearHighscore" onclick="clearScore()" class="btnn">
+            Clear Highscores
+           </button>
+        </div>
+    </div>
+    <!-- control div -->
     <div class="controls"> 
        
-        <button id="start-btn" class="start-btn btn">Start</button>   
-    <button id="next-btn" class="next-btn btn hide">Next</button>   
+        <button id="start-btn" class="start-btn btn">Start
+            <!-- <div id="buttons">
+                <input id="startQuiz" class="start-btn btn" type="button" value="Quiz" />
+              </div> -->
+        </button>   
+    <button id="next-btn" class="next-btn btn hide">Next</button> 
+    <button id="end-btn" class="start-btn btn hide"><div>End</div></button>   
+
     </div>
     
+
+
+    <!-- container end -->
     </div>
-    
+ 
 </body>
 </html>

@@ -1,5 +1,13 @@
 # A-Quez-App-on-JavaScript
 
+## Screenshot for the application
+
+![Screenshot](Screenshot.png)
+
+## links
+- Github URL: https://github.com/oliversh99/A-Quez-App-on-JavaScript
+
+- Deployed To Heroku URL: https://oliversh99.github.io/A-Quez-App-on-JavaScript/index.html
 
 
 ## User Story
@@ -29,3 +37,7 @@ THEN I can save my initials and my score
 HTML
 CSS
 JavaScript
+
+## Questions
+If you have any questions about the repo, open an issue or contact me directly at olivcode999@gmail.com. You can find more of my work at https://github.com/oliversh99
+Contact me 

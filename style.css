@@ -48,7 +48,7 @@ body.wrong {
 }
 
 .btn {
-     --hue: var(--hue-correct);
+--hue: var(--hue-correct);
 border: 1px solid hsl(var(--hue),100%, 30%);
 background-color: hsl(var(--hue), 100%, 50%);
 border-radius:  5px;
@@ -75,10 +75,24 @@ outline: none;
     
 }
 /* style start button and next button */
-.start-btn, .next-btn {
+.start-btn, .next-btn, .tim-btn{
      font-size: 40px;
     font-weight: bold;
     padding: 10px 20px;
+    color:blue ;
+}
+.btnn{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(105, 243, 105);
+    /* padding: 10px 20px; */
+    color:blue ;
+}
+.tittle{
+    font-size: 40px;
+    font-weight: bold;
+   
+    /* padding: 10px 20px; */
     color:blue ;
 }
 
@@ -95,4 +109,8 @@ outline: none;
 
 .timersbtn{
 border: 1px solid green;
+
 }
+.hidden {
+    display: none;
+  }
