@@ -17,7 +17,7 @@ nextButton.addEventListener('click', () => {
 
 
   var timer = document.getElementById("timer");
-  var secondsLeft = 6;
+  var secondsLeft = 90;
   var timerInterval;
 // timer function
 function startTimer() {
@@ -118,7 +118,7 @@ function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
     element.classList.add('correct')
-    // score++;
+    score++;
     console.log(score)
   } else {
     element.classList.add('wrong')
@@ -248,7 +248,7 @@ function replayQuiz () {
   questionContainerElement.classList.add('hide')
   // startBtn.classList.remove('hidden');
   startButton.classList.remove('hide');
-  secondsLeft = 60;
+  secondsLeft = 90;
   score = 0;
   currentQuestionIndex = 0;
 }

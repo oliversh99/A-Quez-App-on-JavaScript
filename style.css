@@ -10,6 +10,8 @@
     --hue-correct: 145;
 }
 
+ 
+
 body {
     --hue: var(--hue-neutral);
     padding: 0;
@@ -19,6 +21,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-image: url('pictures/pic1.jpg');
 }
 
 body.correct {
@@ -28,9 +31,12 @@ body.wrong {
     --hue: var(--hue-wrong);
 
 }
-
+#question {
+color: rgb(66, 10, 196);
+font-weight: 800;
+}
 .container{
-
+    background-image: url('pictures/pic2.jpg');
     width: 800px;
     max-width: 80%;
     background-color: white;
