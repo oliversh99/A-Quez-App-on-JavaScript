@@ -2,7 +2,7 @@
 
 ## Screenshot for the application
 
-![Screenshot](pictures\Screenshot.png)
+<img src ="pictures\Screenshot.png" width="580" height="280">
 
 ## links
 - Github URL: https://github.com/oliversh99/A-Quez-App-on-JavaScript
