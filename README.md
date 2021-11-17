@@ -2,7 +2,7 @@
 
 ## Screenshot for the application
 
-![Screenshot](pictures\Screenshot.jpg)
+![Screenshot](pictures\Screenshot.png)
 
 ## links
 - Github URL: https://github.com/oliversh99/A-Quez-App-on-JavaScript
