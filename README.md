@@ -2,7 +2,7 @@
 
 ## Screenshot for the application
 
-<img src ="pictures\Screenshot.png" width="580" height="280">
+<img src ="pictures\Screenshot.png" width="650" height="350">
 
 ## links
 - Github URL: https://github.com/oliversh99/A-Quez-App-on-JavaScript
